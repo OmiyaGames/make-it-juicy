@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: f4b0f6bbca8f75a4a84685ae80eadea2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: rockGrassDown
+    21300002: rockGrassDown (1x6)
+    21300004: rockGrassDown (2x6)
+    21300006: rockGrassDown (3x6)
+    21300008: rockGrassDown (1x5)
+    21300010: rockGrassDown (2x5)
+    21300012: rockGrassDown (3x5)
+    21300014: rockGrassDown (1x4)
+    21300016: rockGrassDown (2x4)
+    21300018: rockGrassDown (3x4)
+    21300020: rockGrassDown_9
+    21300022: rockGrassDown (2x3)
+    21300024: rockGrassDown (3x3)
+    21300026: rockGrassDown (2x2)
+    21300028: rockGrassDown (3x2)
+    21300030: rockGrassDown (2x1)
+    21300032: rockGrassDown (3x1)
+    21300034: rockGrassDown_16
+    21300036: rockGrassDown_17
+    21300038: rockGrassDown_18
+    21300040: rockGrassDown_19
+    21300042: rockGrassDown_20
+    21300044: rockGrassDown_21
+    21300046: rockGrassDown_22
+    21300048: rockGrassDown_23
+    21300050: rockGrassDown_24
+    21300052: rockGrassDown_25
+    21300054: rockGrassDown_26
+    21300056: rockGrassDown_27
+    21300058: rockGrassDown_28
+    21300060: rockGrassDown_29
+    21300062: rockGrassDown_30
+    21300064: rockGrassDown_31
+    21300066: rockGrassDown_32
+    21300068: rockGrassDown_33
+    21300070: rockGrassDown_34
+    21300072: rockGrassDown_35
+    21300074: rockGrassDown_36
+    21300076: rockGrassDown_37
+    21300078: rockGrassDown_38
+    21300080: rockGrassDown_39
+    21300082: rockGrassDown_40
+    21300084: rockGrassDown_41
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: rockGrassDown (1x6)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (2x6)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 195
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (3x6)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 195
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (1x5)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (2x5)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 156
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (3x5)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 156
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (1x4)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (2x4)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 117
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (3x4)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 117
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (2x3)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 78
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (3x3)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 78
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (2x2)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 39
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (3x2)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 39
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (2x1)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 0
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown (3x1)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrassDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

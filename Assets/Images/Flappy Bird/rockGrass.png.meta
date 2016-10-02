@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: eca6744b5c01e6a4584506310d15a349
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: rockGrass
+    21300002: rockGrass (2x6)
+    21300004: rockGrass (3x6)
+    21300006: rockGrass (2x5)
+    21300008: rockGrass (3x5)
+    21300010: rockGrass (2x4)
+    21300012: rockGrass (3x4)
+    21300014: rockGrass (1x3)
+    21300016: rockGrass (2x3)
+    21300018: rockGrass (3x3)
+    21300020: rockGrass (1x2)
+    21300022: rockGrass (2x2)
+    21300024: rockGrass (3x2)
+    21300026: rockGrass (1x1)
+    21300028: rockGrass (2x1)
+    21300030: rockGrass (3x1)
+    21300032: rockGrass
+    21300034: rockGrass_16
+    21300036: rockGrass_17
+    21300038: rockGrass_18
+    21300040: rockGrass_19
+    21300042: rockGrass_20
+    21300044: rockGrass_21
+    21300046: rockGrass_22
+    21300048: rockGrass_23
+    21300050: rockGrass_24
+    21300052: rockGrass_25
+    21300054: rockGrass_26
+    21300056: rockGrass_27
+    21300058: rockGrass_28
+    21300060: rockGrass_29
+    21300062: rockGrass_30
+    21300064: rockGrass_31
+    21300066: rockGrass_32
+    21300068: rockGrass_33
+    21300070: rockGrass_34
+    21300072: rockGrass_35
+    21300074: rockGrass_36
+    21300076: rockGrass_37
+    21300078: rockGrass_38
+    21300080: rockGrass_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: rockGrass (2x6)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 200
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (3x6)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 200
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (2x5)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 161
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (3x5)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 161
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (2x4)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 122
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (3x4)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 122
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (1x3)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (2x3)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 83
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (3x3)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 83
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (1x2)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (2x2)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 44
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (3x2)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 44
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (1x1)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (2x1)
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 5
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass (3x1)
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 5
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rockGrass
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 108
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
