@@ -17,7 +17,7 @@ public class Diamond : MonoBehaviour
         {
             if(body == null)
             {
-                body = rigidbody2D;
+                body = GetComponent<Rigidbody2D>();
             }
             return body;
         }
@@ -30,8 +30,8 @@ public class Diamond : MonoBehaviour
         ParticleSystem[] allParticles = GetComponentsInChildren<ParticleSystem>();
         for(int index = 0; index < allParticles.Length; ++index)
         {
-            allParticles[index].renderer.sortingLayerID = diamond.sortingLayerID;
-            allParticles[index].renderer.sortingOrder = diamond.sortingOrder;
+            allParticles[index].GetComponent<Renderer>().sortingLayerID = diamond.sortingLayerID;
+            allParticles[index].GetComponent<Renderer>().sortingOrder = diamond.sortingOrder;
         }
     }
 

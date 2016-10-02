@@ -11,8 +11,8 @@ public class StopFlappBird : MonoBehaviour
 
     void Start()
     {
-        heartParticles.renderer.sortingLayerID = femaleFlappyBird.sortingLayerID;
-        heartParticles.renderer.sortingOrder = femaleFlappyBird.sortingOrder;
+        heartParticles.GetComponent<Renderer>().sortingLayerID = femaleFlappyBird.sortingLayerID;
+        heartParticles.GetComponent<Renderer>().sortingOrder = femaleFlappyBird.sortingOrder;
         heartParticles.Stop();
     }
 

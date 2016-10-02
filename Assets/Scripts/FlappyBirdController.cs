@@ -155,7 +155,7 @@ public class FlappyBirdController : IGameController
 
 	public void Awake()
 	{
-		body = rigidbody2D;
+		body = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 
 		flapForceVector *= flapForce;
@@ -168,28 +168,28 @@ public class FlappyBirdController : IGameController
         SpriteRenderer sprite = GetComponent<SpriteRenderer>();
         if(featherEffect != null)
         {
-            featherEffect.renderer.sortingLayerName = sprite.sortingLayerName;
-            featherEffect.renderer.sortingOrder = sprite.sortingOrder;
+            featherEffect.GetComponent<Renderer>().sortingLayerName = sprite.sortingLayerName;
+            featherEffect.GetComponent<Renderer>().sortingOrder = sprite.sortingOrder;
         }
         if(trailerEffect != null)
         {
-            trailerEffect.renderer.sortingLayerName = sprite.sortingLayerName;
-            trailerEffect.renderer.sortingOrder = sprite.sortingOrder;
+            trailerEffect.GetComponent<Renderer>().sortingLayerName = sprite.sortingLayerName;
+            trailerEffect.GetComponent<Renderer>().sortingOrder = sprite.sortingOrder;
         }
         if(explosionEffect != null)
         {
             foreach(ParticleSystem particle in explosionEffect.AllParticles)
             {
-                particle.renderer.sortingLayerName = sprite.sortingLayerName;
-                particle.renderer.sortingOrder = sprite.sortingOrder;
+                particle.GetComponent<Renderer>().sortingLayerName = sprite.sortingLayerName;
+                particle.GetComponent<Renderer>().sortingOrder = sprite.sortingOrder;
             }
         }
         if(fireEffect != null)
         {
             foreach(ParticleSystem particle in fireEffect.AllParticles)
             {
-                particle.renderer.sortingLayerName = sprite.sortingLayerName;
-                particle.renderer.sortingOrder = sprite.sortingOrder;
+                particle.GetComponent<Renderer>().sortingLayerName = sprite.sortingLayerName;
+                particle.GetComponent<Renderer>().sortingOrder = sprite.sortingOrder;
             }
         }
 

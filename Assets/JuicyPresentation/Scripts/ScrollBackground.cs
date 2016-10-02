@@ -66,8 +66,8 @@ public class ScrollBackground : MonoBehaviour
         shiftObstaclesBy3 = shiftObstacleBy;
         if(backgroundPartiles != null)
         {
-            backgroundPartiles.renderer.sortingLayerID = matchOrder.sortingLayerID;
-            backgroundPartiles.renderer.sortingOrder = matchOrder.sortingOrder + 1;
+            backgroundPartiles.GetComponent<Renderer>().sortingLayerID = matchOrder.sortingLayerID;
+            backgroundPartiles.GetComponent<Renderer>().sortingOrder = matchOrder.sortingOrder + 1;
         }
     }
 

@@ -112,13 +112,13 @@ public class ScatterDebris : MonoBehaviour
         }
         foreach(ParticleSystem particle in topExplosionCenter.AllParticles)
         {
-            particle.renderer.sortingLayerID = topPillarSprites[0].sortingLayerID;
-            particle.renderer.sortingOrder = topPillarSprites[0].sortingOrder;
+            particle.GetComponent<Renderer>().sortingLayerID = topPillarSprites[0].sortingLayerID;
+            particle.GetComponent<Renderer>().sortingOrder = topPillarSprites[0].sortingOrder;
         }
         foreach(ParticleSystem particle in bottomExplosionCenter.AllParticles)
         {
-            particle.renderer.sortingLayerID = topPillarSprites[0].sortingLayerID;
-            particle.renderer.sortingOrder = topPillarSprites[0].sortingOrder;
+            particle.GetComponent<Renderer>().sortingLayerID = topPillarSprites[0].sortingLayerID;
+            particle.GetComponent<Renderer>().sortingOrder = topPillarSprites[0].sortingOrder;
         }
 	}
 

@@ -10,7 +10,7 @@ public class ObstacleHit : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        animationCache = animation;
+        animationCache = GetComponent<Animation>();
 	}
 	
     void OnCollisionEnter2D(Collision2D info)
