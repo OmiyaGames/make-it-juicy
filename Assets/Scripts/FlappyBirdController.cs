@@ -213,10 +213,10 @@ public class FlappyBirdController : IGameController
 		flapTriggered = null;
 
 		body.velocity = Vector2.zero;
-		body.isKinematic = true;
+		body.bodyType = RigidbodyType2D.Static;
 		body.position = startingPosition;
 		body.rotation = 0;
-		body.isKinematic = false;
+        body.bodyType = RigidbodyType2D.Dynamic;
 
         AudioSource backgroundMusic = GlobalGameObject.Get<AudioSource>();
         backgroundMusic.mute = !playMusic;
@@ -362,7 +362,7 @@ public class FlappyBirdController : IGameController
         {
             case DeathStyle.Still:
             {
-                body.isKinematic = true;
+                body.bodyType = RigidbodyType2D.Static;
                 break;
             }
             case DeathStyle.CameraShake:
