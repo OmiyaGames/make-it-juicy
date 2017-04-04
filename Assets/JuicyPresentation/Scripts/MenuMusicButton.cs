@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using OmiyaGames;
 
 public class MenuMusicButton : IButton
 {
@@ -17,17 +17,16 @@ public class MenuMusicButton : IButton
         }
         set
         {
-            AudioSource backgroundMusic = GlobalGameObject.Get<AudioSource>();
             if(value == true)
             {
                 PlayerPrefs.SetInt(MusicKey, 1);
-                backgroundMusic.mute = false;
+                BackgroundMusic.GlobalMute = false;
                 buttonLabel.text = MusicOnText;
             }
             else
             {
                 PlayerPrefs.SetInt(MusicKey, 0);
-                backgroundMusic.mute = true;
+                BackgroundMusic.GlobalMute = true;
                 buttonLabel.text = MusicOffText;
             }
         }
@@ -36,15 +35,14 @@ public class MenuMusicButton : IButton
     // Use this for initialization
     void Start ()
     {
-        AudioSource backgroundMusic = GlobalGameObject.Get<AudioSource>();
         if(IsMusicOn == true)
         {
-            backgroundMusic.mute = false;
+            BackgroundMusic.GlobalMute = false;
             buttonLabel.text = MusicOnText;
         }
         else
         {
-            backgroundMusic.mute = true;
+            BackgroundMusic.GlobalMute = true;
             buttonLabel.text = MusicOffText;
         }
     }

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+using OmiyaGames;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
@@ -40,8 +39,8 @@ public class FlappyBirdController : IGameController
 	public Animation cameraAnimation = null;
 	public string cameraAnimationName = "cameraRotate";
     [Header("Audio")]
-    public AudioMutator flapSound = null;
-    public AudioMutator hitSound = null;
+    public SoundEffect flapSound = null;
+    public SoundEffect hitSound = null;
     [Header("Other Stuff")]
     public ScrollBackground scroll = null;
     public GameObject[] enableAfterDeath = null;
@@ -77,7 +76,7 @@ public class FlappyBirdController : IGameController
     public Animator flagAnimation = null;
     public string flagAnimationName = "Flag";
     public TextMesh[] flagIncrement = null;
-    public AudioMutator soundEffect = null;
+    public SoundEffect soundEffect = null;
     [Header("Story Stuff")]
     public Animator storyAnimation = null;
     public string storyAnimationTrigger = "KickOffStory";
@@ -218,8 +217,7 @@ public class FlappyBirdController : IGameController
 		body.rotation = 0;
         body.bodyType = RigidbodyType2D.Dynamic;
 
-        AudioSource backgroundMusic = GlobalGameObject.Get<AudioSource>();
-        backgroundMusic.mute = !playMusic;
+        BackgroundMusic.GlobalMute = !playMusic;
 
         tapAnimation.SetActive(true);
 
@@ -384,7 +382,8 @@ public class FlappyBirdController : IGameController
                 }
                 if(trailerEffect != null)
                 {
-                    trailerEffect.enableEmission = false;
+                    ParticleSystem.EmissionModule emission = trailerEffect.emission;
+                    emission.enabled = false;
                 }
                 break;
             }
@@ -404,8 +403,7 @@ public class FlappyBirdController : IGameController
         if(deathStyle == DeathStyle.Story)
         {
             // Cut out the background music
-            AudioSource backgroundMusic = GlobalGameObject.Get<AudioSource>();
-            backgroundMusic.mute = true;
+            BackgroundMusic.GlobalMute = true;
 
             // Make it flash and slow down
             if(flash != null)
@@ -555,10 +553,10 @@ public class FlappyBirdController : IGameController
 
     void UpdateLabelColor()
     {
-        scoreColor.h += (colorChangeSpeed * Time.deltaTime);
-        while (scoreColor.h > 1)
+        scoreColor.Hue += (colorChangeSpeed * Time.deltaTime);
+        while (scoreColor.Hue > 1)
         {
-            scoreColor.h -= 1;
+            scoreColor.Hue -= 1;
         }
         if ((scoreIncrement != null) && (scoreIncrement.Length > 0))
         {
