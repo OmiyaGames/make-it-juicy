@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using OmiyaGames;
 
 public class Diamond : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Diamond : MonoBehaviour
 
     bool isTriggered = false;
     Rigidbody2D body = null;
-    AudioMutator mutator;
+    SoundEffect mutator;
 
     public Rigidbody2D Body
     {
@@ -26,7 +27,7 @@ public class Diamond : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        mutator = GetComponent<AudioMutator>();
+        mutator = GetComponent<SoundEffect>();
         ParticleSystem[] allParticles = GetComponentsInChildren<ParticleSystem>();
         for(int index = 0; index < allParticles.Length; ++index)
         {

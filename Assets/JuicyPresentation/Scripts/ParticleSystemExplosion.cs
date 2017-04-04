@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
+using OmiyaGames;
 
-[RequireComponent(typeof(AudioMutator))]
+[RequireComponent(typeof(SoundEffect))]
 public class ParticleSystemExplosion : MonoBehaviour
 {
 	// a simple script to scale the size, speed and lifetime of a particle system
@@ -9,7 +9,7 @@ public class ParticleSystemExplosion : MonoBehaviour
 
     ParticleSystem[] allParticles = null;
     Transform cachedTransform = null;
-    AudioMutator cachedAudio = null;
+    SoundEffect cachedAudio = null;
 
     public Transform CachedTransform
     {
@@ -32,13 +32,13 @@ public class ParticleSystemExplosion : MonoBehaviour
         }
     }
 
-    public AudioMutator CachedAudio
+    public SoundEffect CachedAudio
     {
         get
         {
             if(cachedAudio == null)
             {
-                cachedAudio = GetComponent<AudioMutator>();
+                cachedAudio = GetComponent<SoundEffect>();
             }
             return cachedAudio;
         }
@@ -51,11 +51,23 @@ public class ParticleSystemExplosion : MonoBehaviour
             if(allParticles == null)
             {
                 allParticles = GetComponentsInChildren<ParticleSystem>();
+                ParticleSystem.MainModule main;
+                ParticleSystem.MinMaxCurve curve;
                 foreach(ParticleSystem system in AllParticles)
                 {
-                    system.startSize *= multiplier;
-                    system.startSpeed *= multiplier;
-                    system.startLifetime *= Mathf.Lerp(multiplier, 1, 0.5f);
+                    main = system.main;
+
+                    curve = main.startSize;
+                    curve.constant *= multiplier;
+                    main.startSize = curve;
+
+                    curve = main.startSpeed;
+                    curve.constant *= multiplier;
+                    main.startSpeed = curve;
+
+                    curve = main.startLifetime;
+                    curve.constant *= Mathf.Lerp(multiplier, 1, 0.5f);
+                    main.startLifetime = curve;
                 }
             }
             return allParticles;
