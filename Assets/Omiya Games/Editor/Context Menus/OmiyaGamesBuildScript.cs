@@ -112,7 +112,7 @@ namespace OmiyaGames
             { BuildTarget.StandaloneWindows64, new BuildInfo("Windows 64-bit", ".exe") },
 
             // Mac platform
-            { BuildTarget.StandaloneOSXUniversal, new BuildInfo("Mac", ".app") },
+            { BuildTarget.StandaloneOSX, new BuildInfo("Mac", ".app") },
             { BuildTarget.StandaloneOSXIntel, new BuildInfo("Mac 32-bit", ".app") },
             { BuildTarget.StandaloneOSXIntel64, new BuildInfo("Mac 64-bit", ".app") },
 
@@ -148,7 +148,7 @@ namespace OmiyaGames
             BuildTarget.StandaloneLinux,
             BuildTarget.StandaloneLinux64
 #else
-            BuildTarget.StandaloneOSXUniversal,
+            BuildTarget.StandaloneOSX,
             BuildTarget.StandaloneLinuxUniversal
 #endif
         };
@@ -286,7 +286,7 @@ namespace OmiyaGames
         public static void PerformMacUniversalBuild()
         {
             allBuildTargets.Clear();
-            allBuildTargets.Add(BuildTarget.StandaloneOSXUniversal);
+            allBuildTargets.Add(BuildTarget.StandaloneOSX);
             BuildAll();
         }
 
