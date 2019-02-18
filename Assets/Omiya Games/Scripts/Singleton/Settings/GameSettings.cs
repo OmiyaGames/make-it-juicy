@@ -145,6 +145,9 @@ namespace OmiyaGames
         bool isBloomEnabled = true;
         #endregion
 
+        private const string nextFlagKey = "nextFlag";
+        private int nextFlag = 0;
+
         public static UserScope DefaultLeaderboardUserScope
         {
             get
@@ -608,6 +611,19 @@ namespace OmiyaGames
         }
         #endregion
 
+        public int NextFlag
+        {
+            get
+            {
+                return nextFlag;
+            }
+            set
+            {
+                nextFlag = value;
+                Settings.SetInt(nextFlagKey, nextFlag);
+            }
+        }
+
         #region Singleton Overrides
         public override void SingletonAwake(Singleton instance)
         {
@@ -708,6 +724,7 @@ namespace OmiyaGames
 
             // NOTE: Feel free to add more stuff here
             RetrieveVersion0Settings();
+            nextFlag = Settings.GetInt(nextFlagKey, 0);
 
             // Run events
             if ((runEvent == true) && (OnRetrieveSettings != null))
@@ -720,6 +737,7 @@ namespace OmiyaGames
         {
             // NOTE: Feel free to add more stuff here
             SaveVersion0Settings();
+            Settings.SetInt(nextFlagKey, nextFlag);
 
             // Save the preferences
             Settings.Save();
